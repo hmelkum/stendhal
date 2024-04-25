@@ -20,7 +20,7 @@ jobs:
         with:
           run: ant -noinput -buildfile build.xml test
       - uses: sarisia/actions-status-discord@v1
-        if: failure()
+        if: true
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_DEVELOPMENT }}
         with:
